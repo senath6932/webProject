@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f7 100%);
+  color: #1a1a2e;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navigation.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 153, 171, 0.1);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative; /* allow absolute positioned search form */
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0.5rem 0;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+    display: none; /* Default state */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0099AB, #00c6d7);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0099AB;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  
+  min-width: 220px;
+  border-radius: 12px;
+  padding: 0.5rem;
+  display: none;
+  z-index: 100;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  position: absolute;
+  display: block;
+  animation: fadeInUp 0.3s ease;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background: rgba(0, 153, 171, 0.1);
+  color: #0099AB;
+  transform: translateX(5px);
+}
+
+/* Header logo image - responsive and contained */
+.logo .logo-icon img.logo-img,
+.logo .logo-icon .logo-img {
+  display: block;
+  height: auto;
+  max-width: 140px; /* prevent overly large logos on wide screens */
+  max-height: 110px;
+  object-fit: contain;
+  border-radius: 8px;
+}
