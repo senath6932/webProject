@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Development Bank</title>
+    <link rel="stylesheet" href="FrontStyle.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="loader">
+        <img src="Regional_Development_Bank_Logo.png" alt="RDB Logo" class="loader-logo">
+        <div class="loading-bar"></div>
+    </div>
+        <div class="top-bar">
+        Sri Lanka's Premier State Owned Development Bank
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="Regional_Development_Bank_Logo.png" alt="RDB BANK" class="logo-img">
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-trigger" type="button" id="productsBtn" aria-haspopup="true" aria-expanded="false" aria-controls="productsMenu">
+                        Products & Services
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu glass" id="productsMenu" role="menu" aria-hidden="true">
+                        <a href="savings.html" class="dropdown-item" role="menuitem" tabindex="-1">Savings & Investments</a>
+                        <a href="loans.html" class="dropdown-item" role="menuitem" tabindex="-1">Loans & Advances</a>
+                        <a href="leasing.html" class="dropdown-item" role="menuitem" tabindex="-1">Leasing</a>
+                        <a href="OtherServices.html" class="dropdown-item" role="menuitem" tabindex="-1">Other Services</a>
+                    </div>
+                </div>
+                <a href="Info.html" class="nav-link">Info</a>
+                <a href="MediaRoom.html" class="nav-link">MediaRoom</a>
+                <a href="contactUs.html" class="nav-link">Contact Us</a>
+                <div class="nav-search">
+                    <button class="search-btn" id="searchBtn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search..." aria-label="Search">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Welcome to Regional<br> Development Bank</h1>
+                    <h5>Premier State Owned Development Bank in Sri Lanka</h5>
+                    <p>The 100% State owned bank was set up with the objective of improving the living standards of the rural masses by providing them accessible and affordable credit facilities that in turn would contribute to strengthen the rural economy.<br>Established under the Pradeshiya Sanwardana Bank Act No.41 of 2008</p>
+                </div>
+                
+                <!-- Middle: YouTube Video -->
+                <div class="hero-video">
+                    <iframe width="700" height="800" src="https://youtu.be/qaQQSetZiFM?si=bdVW7GZrLDo3IyJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+                <!-- Right Side Module: Start Your Journey -->
+                <div class="journey-card">
+                    <h2>Start Your Journey</h2>
+                    <p>Begin your banking experience with us today. Safe, secure, and dedicated to your future.</p>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">6M+</span>
+                        <span class="stat-label">Loyal Customers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">272</span>
+                        <span class="stat-label">Service Points</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3000+</span>
+                        <span class="stat-label">Staff Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Years of Service</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Products & Services</h2>
+                    <p>Comprehensive financial solutions designed to help you grow.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Card 1: Savings / Investments -->
+                    <div class="product-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/savings/400/250.jpg" alt="Savings">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Savings / Investments</h3>
+                            <p class="card-desc">Secure your future with our competitive interest rates and flexible savings plans tailored to your needs.</p>
+                            <a href="#" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Loans & Advances -->
+                    <div class="product-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/loans/400/250.jpg" alt="Loans">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Loans & Advances</h3>
+                            <p class="card-desc">Turn your dreams into reality with our hassle-free loan options for agriculture, housing, and personal needs.</p>
+                            <a href="#" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: RDB Leasing -->
+                    <div class="product-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/leasing/400/250.jpg" alt="Leasing">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">RDB Leasing</h3>
+                            <p class="card-desc">Get the vehicle or equipment you need with our flexible leasing plans and attractive repayment terms.</p>
+                            <a href="#" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Other Services -->
+                    <div class="product-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/services/400/250.jpg" alt="Services">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Other Services</h3>
+                            <p class="card-desc">Explore our range of services including remittances, pawning, and digital banking solutions.</p>
+                            <a href="#" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>News</h2>
+                    <p>Stay updated with the latest news and announcements from Regional Development Bank.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- News Card 1 -->
+                    <div class="product-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/news1/400/250.jpg" alt="News 1">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">New Agricultural Loan Scheme Launched</h3>
+                            <p class="card-desc">RDB introduces a new loan scheme to support farmers with low-interest rates and flexible terms.</p>
+                            <a href="#" class="learn-more">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <div class="product-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/news2/400/250.jpg" alt="News 2">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Annual General Meeting Highlights</h3>
+                            <p class="card-desc">Key achievements and future plans discussed at the AGM, showcasing strong growth in rural banking.</p>
+                            <a href="#" class="learn-more">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <div class="product-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/news3/400/250.jpg" alt="News 3">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Digital Banking Expansion</h3>
+                            <p class="card-desc">RDB expands its digital services to reach more customers in remote areas.</p>
+                            <a href="#" class="learn-more">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 4 -->
+                    <div class="product-card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/news4/400/250.jpg" alt="News 4">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Community Development Initiatives</h3>
+                            <p class="card-desc">RDB partners with local communities for sustainable development projects.</p>
+                            <a href="#" class="learn-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-box">
+            <div class="container">
+                <h2>Additional Information</h2>
+                <p>Here is some additional information about our services and how we can help you achieve your financial goals.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About RDB</h3>
+                    <p>
+                        Regional Development Bank is the premier state-owned development bank in Sri Lanka, dedicated to uplifting the grassroots economy.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Board of Directors</a></li>
+                        <li><a href="#">Financial Reports</a></li>
+                        <li><a href="#">Procurement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Savings Accounts</a></li>
+                        <li><a href="#">Agricultural Loans</a></li>
+                        <li><a href="#">Leasing</a></li>
+                        <li><a href="#">RDB WePay</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Hotline: 1972</li>
+                        <li>Email: info@rdb.lk</li>
+                        <li>No. 16, Sir Chittampalam A. Gardiner Mawatha, Colombo 02</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Regional Development Bank. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html>
